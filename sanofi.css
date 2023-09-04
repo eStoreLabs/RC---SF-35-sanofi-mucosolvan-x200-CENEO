@@ -124,7 +124,7 @@
   font-weight: 900;
   transform: rotate(-3deg);
   margin-bottom: 10px !important;
-  font-size: 25px;
+  font-size: 21px;
   border-radius: 5px;
   font-family: "MuseoSans";
   line-height: 0.8;
@@ -134,7 +134,7 @@
 }
 #es-rc.es-rc .es-kv__text1--red {
   background-color: #d32833;
-  font-size: 18px;
+  font-size: 14px;
   padding-left: 25px;
   line-height: 1.3;
 }
@@ -198,6 +198,7 @@
   font-weight: 500;
   color: #000 !important;
   line-height: normal;
+  padding-top: 10px;
 }
 @media (min-width: 576px) {
   #es-rc.es-rc .es-features__desc {
@@ -539,7 +540,7 @@
 }
 #es-rc.es-rc .es-cross__emptyImage {
   display: block;
-  height: 271px !important;
+  height: 250px !important;
   padding-top: 50px;
 }
 #es-rc.es-rc .es-cross__badge {
