@@ -481,16 +481,27 @@
   position: absolute;
   width: 100%;
   height: 410px;
-  bottom: 0;
+  top: 439px;
   left: 0;
   background: rgb(68, 152, 209);
   background: linear-gradient(180deg, rgb(68, 152, 209) 0%, rgb(31, 87, 164) 27%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4498d1", endColorstr="#1f57a4", GradientType=1);
   z-index: -1;
 }
+@media (min-width: 540px) {
+  #es-rc.es-rc .es-cross__bg {
+    top: 476px;
+  }
+}
+@media (min-width: 768px) {
+  #es-rc.es-rc .es-cross__bg {
+    top: 481px;
+  }
+}
 @media (min-width: 992px) {
   #es-rc.es-rc .es-cross__bg {
     height: 400px;
+    top: 429px;
   }
 }
 @supports (-webkit-touch-callout: none) {
@@ -645,6 +656,7 @@
 #es-rc.es-rc .es-cross th {
   border: none !important;
   min-width: 90px;
+  height: 271px !important;
 }
 #es-rc.es-rc .es-articles__title {
   width: 100%;
