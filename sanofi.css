@@ -33,6 +33,19 @@
     transform: translateX(5px);
   }
 }
+@keyframes pulse {
+	0% {
+		transform: scale(0.95);
+	}
+	
+	70% {
+		transform: scale(1);
+	}
+	
+	100% {
+		transform: scale(0.95);
+	}
+}
 .fdb-block {
   margin-top: 0 !important;
   padding: 0 0 1.5rem 0 !important;
@@ -157,16 +170,16 @@
   color: #19428f !important;
   line-height: normal;
   font-weight: 700 !important;
-  height: 3.6em;
+  height: 4.6em;
 }
 @media (min-width: 381px) {
   #es-rc.es-rc .es-features__title {
-    height: 2.6em;
+    height: 3.6em;
   }
 }
 @media (min-width: 576px) {
   #es-rc.es-rc .es-features__title {
-    font-size: 22px !important;
+    font-size: 19px !important;
   }
 }
 @media (min-width: 768px) {
@@ -210,12 +223,18 @@
   background-size: cover;
   background-position: 64%;
 }
+
 #es-rc.es-rc .es-description__box {
-  height: 510px;
+  height: 380px;
 }
-@media (min-width: 992px) {
+@media (max-width: 375px) {
   #es-rc.es-rc .es-description__box {
-    height: unset;
+    height: 400px;
+  }
+}
+@media (min-width: 786px) {
+  #es-rc.es-rc .es-description__box {
+    height: 368px;
   }
 }
 #es-rc.es-rc .es-description__title {
@@ -238,33 +257,47 @@
   font-family: "MuseoSans";
   line-height: 0.8;
 }
-#es-rc.es-rc .es-description__text p {
-  letter-spacing: 1px;
+@media (max-width: 375px) {
+  #es-rc.es-rc .es-description__text {
+    font-size: 23px;
+  }
 }
+
 #es-rc.es-rc .es-description__text--blue {
   font-size: 25px;
   background-color: #d32833;
   transform: rotate(-3deg);
   line-height: 1.3;
   position: relative;
-  left: -40px;
+  left: -30px;
 }
 #es-rc.es-rc .es-description__text--middle {
   line-height: 0.8;
   position: relative;
-  left: 30px;
+  left: 15px;
 }
 #es-rc.es-rc .es-description__text1 {
   font-family: "Montserrat";
-  font-size: 20px !important;
+  font-size: 16px !important;
   color: #fff !important;
   font-weight: 300 !important;
 }
+
 #es-rc.es-rc .es-description__text2 {
   font-family: "Montserrat";
   font-size: 26px !important;
   color: #fff !important;
   text-shadow: 0px 0px 50px #004999 !important;
+  padding-top: 2rem!important;
+}
+@media (min-width: 768px) {
+  #es-rc.es-rc .es-description__text2 {
+    font-size: 20px !important;
+    padding-top: unset!important;
+  }
+  #es-rc.es-rc .es-description__img {
+    padding-top: 3rem;
+  }
 }
 #es-rc.es-rc .es-description__text3 {
   font-family: "Montserrat";
@@ -314,7 +347,7 @@
   font-weight: 900;
   transform: rotate(-3deg);
   margin: 0 auto 0 !important;
-  font-size: 20px;
+  font-size: 25px;
   border-radius: 5px;
   font-family: "MuseoSans";
   line-height: 1.2;
@@ -335,10 +368,15 @@
 }
 #es-rc.es-rc .es-why__text--3 {
   position: relative;
-  left: 5%;
-  font-size: 25px;
+  left: -4%;
+  font-size: 30px;
   transform: rotate(-1.5deg);
   line-height: 1.3;
+}
+@media (max-width: 390px) {
+  #es-rc.es-rc .es-why__text--3 {
+    font-size: 23px;
+  }
 }
 #es-rc.es-rc .es-why__text--3--sup {
   font-size: 29px;
@@ -363,16 +401,23 @@
   background-color: #19428f !important;
 }
 #es-rc.es-rc .es-dose__even {
-  background-color: #1b4a97 !important;
+  background-color: rgba(31, 87, 164, 0.3764705882) !important;
 }
 #es-rc.es-rc .es-dose__box {
   padding: 0 !important;
   background-color: #19428f;
   border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 .3125rem .875rem 0 rgba(129,129,129,.2)!important;
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   #es-rc.es-rc .es-dose__box {
-    height: 394px;
+    height: 536px;
+  }
+}
+@media (min-width: 768px) {
+  #es-rc.es-rc .es-dose table {
+    height: 536px;
   }
 }
 #es-rc.es-rc .es-dose__subtitle {
@@ -390,6 +435,11 @@
   line-height: 1.3;
   margin: 0 auto 10px !important;
   background-color: #d32833;
+}
+@media (max-width: 375px) {
+  #es-rc.es-rc .es-dose__subtitle {
+    font-size: 30px!important;
+  }
 }
 #es-rc.es-rc .es-dose--bolded {
   font-weight: 700;
@@ -447,7 +497,7 @@
   font-weight: 900;
   transform: rotate(-3deg);
   margin: 0 auto 10px !important;
-  font-size: 32px;
+  font-size: 25px;
   border-radius: 5px;
   font-family: "MuseoSans";
   line-height: 0.8;
@@ -467,7 +517,7 @@
 }
 #es-rc.es-rc .es-video__text--2 {
   text-align: left;
-  font-size: 40px;
+  font-size: 30px;
   transform: rotate(-1.5deg);
   line-height: 1.1;
 }
@@ -526,11 +576,21 @@
   font-weight: 900;
   transform: rotate(-3deg);
   margin: 0 auto 10px !important;
-  font-size: 24px;
+  font-size: 25px;
   border-radius: 5px;
   font-family: "MuseoSans";
   line-height: 1.3;
   background-color: #d32833;
+}
+@media (max-width: 375px) {
+  #es-rc.es-rc .es-cross__text {
+    font-size: 23px;
+  }
+}
+@media (min-width: 768px) {
+  #es-rc.es-rc .es-cross__text {
+    font-size: 30px;
+  }
 }
 #es-rc.es-rc .es-cross__text p {
   letter-spacing: 1px;
@@ -566,6 +626,7 @@
   font-family: "MuseoSans";
   padding: 0 0 0 10px !important;
   border-radius: 5px;
+  animation: pulse 1.2s infinite;
 }
 #es-rc.es-rc .es-cross__badge span {
   line-height: 1.3;
@@ -584,7 +645,7 @@
 #es-rc.es-rc .es-cross__row {
   vertical-align: middle;
   text-align: left !important;
-  padding-left: 15px !important;
+  padding-left: 5px !important;
   font-family: "Montserrat";
   font-weight: 500;
   color: #fff;
@@ -637,11 +698,13 @@
   border-color: transparent !important;
 }
 #es-rc.es-rc .es-cross thead {
-  height: 271px;
+  height: 271px !important;
+  overflow: hidden  !important;
+  z-index: -1  !important;
 }
 #es-rc.es-rc .es-cross tbody {
   height: 400px;
-  z-index: 2;
+  z-index: 2 !important;
 }
 #es-rc.es-rc .es-cross td {
   font-family: "Montserrat";
@@ -649,6 +712,8 @@
   color: #fff;
   font-size: 16px !important;
   font-weight: 300;
+  vertical-align: -webkit-baseline-middle;
+  vertical-align: middle;
 }
 #es-rc.es-rc .es-cross td span {
   font-weight: 700;
@@ -675,7 +740,7 @@
   font-weight: 900;
   transform: rotate(-3deg);
   margin: 0 auto 10px !important;
-  font-size: 24px;
+  font-size: 25px;
   border-radius: 5px;
   font-family: "MuseoSans";
   line-height: 1.3;
@@ -684,6 +749,7 @@
 @media (min-width: 540px) {
   #es-rc.es-rc .es-articles__text {
     font-size: 38px;
+    max-width: 100%;
   }
 }
 @media (min-width: 768px) {
@@ -778,260 +844,265 @@
 #es-rc.es-rc *::-webkit-scrollbar-thumb:active {
   background-color: #A72028;
 }
-
+@media (max-width: 400px) {
+  #es-rc.es-rc .es-kv__title {
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+}
 @media (min-width: 400px) {
-  .es-kv__text {
+  #es-rc.es-rc .es-kv__text {
     font-size: 31px !important;
   }
-  .es-kv__text--red {
+  #es-rc.es-rc .es-kv__text--red {
     font-size: 26px !important;
   }
-  .es-kv__subtitle {
+  #es-rc.es-rc .es-kv__subtitle {
     bottom: 10px !important;
     left: 20px !important;
   }
-  .es-kv__text1 {
+  #es-rc.es-rc .es-kv__text1 {
     font-size: 28px !important;
     line-height: 0.8;
   }
-  .es-kv__text1--red {
+  #es-rc.es-rc .es-kv__text1--red {
     font-size: 18px !important;
     padding-left: 25px !important;
   }
-  .es-kv__text1--middle {
+  #es-rc.es-rc .es-kv__text1--middle {
     margin-left: 40px !important;
   }
-  .es-kv__text1--number {
+  #es-rc.es-rc .es-kv__text1--number {
     top: -12%;
     left: -19% !important;
     font-size: 40px !important;
   }
-  .es-why__text {
+  #es-rc.es-rc .es-why__text {
     font-size: 25px !important;
   }
-  .es-why__text--3 {
+  #es-rc.es-rc .es-why__text--3 {
     font-size: 30px !important;
     left: 3% !important;
   }
 }
 @media (min-width: 440px) {
-  .es-kv__text {
+  #es-rc.es-rc .es-kv__text {
     font-size: 37px !important;
   }
-  .es-kv__text--red {
+  #es-rc.es-rc .es-kv__text--red {
     font-size: 30px !important;
   }
-  .es-why__text {
+  #es-rc.es-rc .es-why__text {
     font-size: 28px !important;
   }
-  .es-why__text--3 {
+  #es-rc.es-rc .es-why__text--3 {
     font-size: 33px !important;
     left: 1% !important;
   }
 }
 @media (min-width: 500px) {
-  .es-kv__text {
+  #es-rc.es-rc .es-kv__text {
     font-size: 50px !important;
   }
-  .es-kv__text--red {
+  #es-rc.es-rc .es-kv__text--red {
     font-size: 38px !important;
   }
-  .es-kv__subtitle {
+  #es-rc.es-rc .es-kv__subtitle {
     bottom: 15px !important;
     left: 20px !important;
   }
-  .es-kv__text1 {
+  #es-rc.es-rc .es-kv__text1 {
     font-size: 33px !important;
     line-height: 0.8;
   }
-  .es-kv__text1--red {
+  #es-rc.es-rc .es-kv__text1--red {
     font-size: 22px !important;
     padding-left: 35px !important;
   }
-  .es-kv__text1--middle {
+  #es-rc.es-rc .es-kv__text1--middle {
     margin-left: 40px !important;
   }
-  .es-kv__text1--number {
+  #es-rc.es-rc .es-kv__text1--number {
     top: -12%;
     left: -16% !important;
     font-size: 55px !important;
   }
-  .es-why__text {
+  #es-rc.es-rc .es-why__text {
     font-size: 30px !important;
   }
-  .es-why__text--3 {
+  #es-rc.es-rc .es-why__text--3 {
     font-size: 35px !important;
     left: 1% !important;
   }
 }
 @media (min-width: 540px) {
-  .es-kv__text--blue {
+  #es-rc.es-rc .es-kv__text--blue {
     margin-left: 120px !important;
   }
-  .es-why__text {
+  #es-rc.es-rc .es-why__text {
     font-size: 35px !important;
   }
-  .es-why__text--3 {
+  #es-rc.es-rc .es-why__text--3 {
     font-size: 40px !important;
     left: 1% !important;
   }
-  .es-video__text {
+  #es-rc.es-rc .es-video__text {
     font-size: 38px !important;
   }
-  .es-video__text--2 {
+  #es-rc.es-rc .es-video__text--2 {
     font-size: 50px !important;
   }
-  .es-cross__text {
+  #es-rc.es-rc .es-cross__text {
     font-size: 38px !important;
   }
 }
 @media (min-width: 576px) {
-  .es-kv__title {
+  #es-rc.es-rc .es-kv__title {
     top: 25% !important;
     left: 15px !important;
   }
-  .es-kv__text {
+  #es-rc.es-rc .es-kv__text {
     font-size: 33px !important;
   }
-  .es-kv__text--red {
+  #es-rc.es-rc .es-kv__text--red {
     font-size: 25px !important;
   }
-  .es-kv__text--blue {
+  #es-rc.es-rc .es-kv__text--blue {
     margin-left: 20px !important;
   }
-  .es-kv__mobile {
+  #es-rc.es-rc .es-kv__mobile {
     display: none !important;
   }
-  .es-kv__desktop {
+  #es-rc.es-rc .es-kv__desktop {
     display: block !important;
   }
-  .es-kv__subtitle {
+  #es-rc.es-rc .es-kv__subtitle {
     bottom: 32px !important;
     left: 26px !important;
   }
-  .es-kv__text1 {
+  #es-rc.es-rc .es-kv__text1 {
     font-size: 25px !important;
     line-height: 0.8;
   }
-  .es-kv__text1--red {
+  #es-rc.es-rc .es-kv__text1--red {
     font-size: 20px !important;
     padding-left: 30px !important;
   }
-  .es-kv__text1--middle {
+  #es-rc.es-rc .es-kv__text1--middle {
     margin-left: 40px !important;
   }
-  .es-kv__text1--number {
+  #es-rc.es-rc .es-kv__text1--number {
     top: -12%;
     left: -17% !important;
     font-size: 50px !important;
   }
-  .es-description__text {
+  #es-rc.es-rc .es-description__text {
     font-size: 40px !important;
   }
-  .es-description__text--blue {
+  #es-rc.es-rc .es-description__text--blue {
     font-size: 30px !important;
   }
-  .es-why__text {
+  #es-rc.es-rc .es-why__text {
     font-size: 38px !important;
   }
-  .es-why__text--1 {
+  #es-rc.es-rc .es-why__text--1 {
     left: -30% !important;
   }
-  .es-why__text--3 {
+  #es-rc.es-rc .es-why__text--3 {
     font-size: 44px !important;
     left: -2% !important;
   }
-  .es-why__text--3--sup {
+  #es-rc.es-rc .es-why__text--3--sup {
     font-size: 29px !important;
   }
-  .es-footer {
+  #es-rc.es-rc .es-footer {
     font-size: 38px !important;
   }
 }
 @media (min-width: 768px) {
-  .es-kv__text {
+  #es-rc.es-rc .es-kv__text {
     font-size: 45px !important;
   }
-  .es-kv__text--red {
+  #es-rc.es-rc .es-kv__text--red {
     font-size: 36px !important;
   }
-  .es-kv__subtitle {
+  #es-rc.es-rc .es-kv__subtitle {
     bottom: 32px !important;
     left: 26px !important;
   }
-  .es-kv__text1 {
+  #es-rc.es-rc .es-kv__text1 {
     font-size: 40px !important;
     line-height: 0.8;
   }
-  .es-kv__text1--red {
+  #es-rc.es-rc .es-kv__text1--red {
     font-size: 32px !important;
     padding-left: 45px !important;
   }
-  .es-kv__text1--middle {
+  #es-rc.es-rc .es-kv__text1--middle {
     margin-left: 40px !important;
   }
-  .es-kv__text1--number {
+  #es-rc.es-rc .es-kv__text1--number {
     top: -12%;
     left: -11% !important;
     font-size: 75px !important;
   }
-  .es-why__text--1 {
+  #es-rc.es-rc .es-why__text--1 {
     line-height: 0.5 !important;
   }
-  .es-why__text--3 {
+  #es-rc.es-rc .es-why__text--3 {
     left: 5% !important;
     font-size: 50px !important;
   }
-  .es-cross__text {
+  #es-rc.es-rc .es-cross__text {
     font-size: 40px !important;
   }
-  .es-articles__text {
+  #es-rc.es-rc .es-articles__text {
     font-size: 40px !important;
   }
 }
 @media (min-width: 992px) {
-  .es-mobile-break {
+  #es-rc.es-rc .es-mobile-break {
     display: none !important;
   }
-  .es-kv__text {
+  #es-rc.es-rc .es-kv__text {
     font-size: 62px !important;
   }
-  .es-kv__text--red {
+  #es-rc.es-rc .es-kv__text--red {
     font-size: 50px !important;
   }
-  .es-kv__subtitle {
+  #es-rc.es-rc .es-kv__subtitle {
     bottom: 67px !important;
     left: 33px !important;
   }
-  .es-kv__text1 {
+  #es-rc.es-rc .es-kv__text1 {
     font-size: 50px !important;
     line-height: 0.8;
   }
-  .es-kv__text1--red {
+  #es-rc.es-rc .es-kv__text1--red {
     font-size: 38px !important;
     padding-left: 65px !important;
   }
-  .es-kv__text1--middle {
+  #es-rc.es-rc .es-kv__text1--middle {
     margin-left: 65px !important;
   }
-  .es-kv__text1--number {
+  #es-rc.es-rc .es-kv__text1--number {
     top: -13% !important;
     left: -15% !important;
     font-size: 98px !important;
   }
-  .es-why__text--1 {
+  #es-rc.es-rc .es-why__text--1 {
     left: -35% !important;
   }
-  .es-why__text--3 {
+  #es-rc.es-rc .es-why__text--3 {
     left: 18% !important;
   }
-  .es-video__text--1 {
+  #es-rc.es-rc .es-video__text--1 {
     left: -25% !important;
   }
-  .es-cross__table {
+  #es-rc.es-rc .es-cross__table {
     overflow: visible !important;
   }
-  .es-cross__articles:hover {
+  #es-rc.es-rc .es-cross__articles:hover {
     background-color: #000 !important;
   }
 }/*# sourceMappingURL=sanofi.css.map */
