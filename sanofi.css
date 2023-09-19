@@ -170,11 +170,11 @@
   color: #19428f !important;
   line-height: normal;
   font-weight: 700 !important;
-  height: 3.6em;
+  height: 4.6em;
 }
 @media (min-width: 381px) {
   #es-rc.es-rc .es-features__title {
-    height: 2.6em;
+    height: 3.6em;
   }
 }
 @media (min-width: 576px) {
@@ -373,7 +373,7 @@
   transform: rotate(-1.5deg);
   line-height: 1.3;
 }
-@media (max-width: 375px) {
+@media (max-width: 390px) {
   #es-rc.es-rc .es-why__text--3 {
     font-size: 23px;
   }
