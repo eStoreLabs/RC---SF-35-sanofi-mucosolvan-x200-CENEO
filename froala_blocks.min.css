@@ -3,9 +3,7 @@ dl,ol,p,pre,ul{margin-top:0;margin-bottom:1rem}address,dl,ol,p,pre,ul{margin-bot
 .fdb-block {
     margin-top:3em;
 }
-#es-rc-content {
-    background:url("../imgs/checkerboard.png") 0 0 repeat;
-}
+
 @keyframes es-animation-element-pulse {
     0% {
         transform: scale(0.85);
