@@ -98,7 +98,7 @@
   text-transform: uppercase;
   font-weight: 900;
   transform: rotate(-3deg);
-  margin-bottom: 6px !important;
+  margin-bottom: 10px !important;
   border-radius: 5px;
   font-family: "MuseoSans";
   line-height: 0.8;
@@ -136,7 +136,7 @@
   text-transform: uppercase;
   font-weight: 900;
   transform: rotate(-3deg);
-  margin-bottom: 10px !important;
+  margin-bottom: 5px !important;
   font-size: 21px;
   border-radius: 5px;
   font-family: "MuseoSans";
@@ -149,6 +149,7 @@
   background-color: #d32833;
   font-size: 14px;
   padding-left: 25px;
+  padding-block: 10px;
   line-height: 1.3;
 }
 #es-rc.es-rc .es-kv__text1--middle {
@@ -794,6 +795,9 @@
   margin: 0 auto 10px !important;
   background-color: #d32833;
 }
+#es-rc.es-rc .es-articles__button:hover {
+  cursor: pointer;
+}
 #es-rc.es-rc .es-footer {
   background-image: url("/static/images/description-bg.png");
 }
@@ -852,7 +856,7 @@
 }
 @media (min-width: 400px) {
   #es-rc.es-rc .es-kv__text {
-    font-size: 31px !important;
+    font-size: 27px !important;
   }
   #es-rc.es-rc .es-kv__text--red {
     font-size: 26px !important;
@@ -887,10 +891,11 @@
 }
 @media (min-width: 440px) {
   #es-rc.es-rc .es-kv__text {
-    font-size: 37px !important;
+    font-size: 31px !important;
   }
   #es-rc.es-rc .es-kv__text--red {
-    font-size: 30px !important;
+    font-size: 26px !important;
+    line-height: 1.3;
   }
   #es-rc.es-rc .es-why__text {
     font-size: 28px !important;
@@ -902,10 +907,10 @@
 }
 @media (min-width: 500px) {
   #es-rc.es-rc .es-kv__text {
-    font-size: 50px !important;
+    font-size: 39px !important;
   }
   #es-rc.es-rc .es-kv__text--red {
-    font-size: 38px !important;
+    font-size: 34px !important;
   }
   #es-rc.es-rc .es-kv__subtitle {
     bottom: 15px !important;
